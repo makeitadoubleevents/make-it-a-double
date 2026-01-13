@@ -1,80 +1,181 @@
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #512D38;
+* {
+  box-sizing: border-box;
 }
 
-/* HERO SECTION */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #512d38;
+}
+
+/* HERO */
 .hero {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
-  padding: 5vw;
+  padding: 6vw;
   gap: 4vw;
-
-  background: radial-gradient(
-      circle at top right,
-      #F4BFDB 0%,
-      rgba(244,191,219,0.25) 35%,
-      transparent 60%
-    ),
-    linear-gradient(135deg, #512D38, #B27092 60%, #87BAAB);
+  background:
+    radial-gradient(circle at top right, #f4bfdb 0%, rgba(244,191,219,.25) 35%, transparent 60%),
+    linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
 }
 
-/* TEXT */
 .hero-content {
   color: white;
   max-width: 560px;
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
   font-weight: 500;
-  letter-spacing: 0.02em;
-  margin: 0 0 1rem;
+  letter-spacing: .03em;
+  line-height: 1;
+  margin-bottom: 1rem;
   white-space: nowrap;
 }
 
 .hero p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.85);
   max-width: 480px;
+  opacity: .85;
   margin-bottom: 2rem;
 }
 
-/* BUTTON */
 .btn {
-  display: inline-block;
-  background: #F4BFDB;
-  color: #512D38;
-  padding: 14px 28px;
+  background: #f4bfdb;
+  color: #512d38;
+  padding: 14px 32px;
   border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: .3s ease;
 }
 
 .btn:hover {
-  background: #FFE9F3;
+  background: #ffe9f3;
   transform: translateY(-2px);
-}
-
-/* IMAGE */
-.hero-image {
-  position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .hero-image img {
   width: 100%;
   max-width: 480px;
   border-radius: 22px;
-  box-shadow: 0 60px 120px rgba(0,0,0,0.45);
-  object-fit: cover;
+  box-shadow: 0 60px 120px rgba(0,0,0,.45);
+}
+
+/* SERVICES */
+.services {
+  margin-top: -6vw;
+  padding: 7vw 6vw 8vw;
+  background: #f6d6e3;
 }
 
 
+.services h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 4vw;
+  color: #512d38;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  gap: 2.5rem;
+}
+
+.service-tile {
+  position: relative;
+  height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 30px 60px rgba(0,0,0,.2);
+  transition: .3s ease;
+}
+
+.service-tile:hover {
+  transform: translateY(-10px);
+}
+
+.service-tile::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.1));
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem;
+  color: white;
+}
+
+.overlay h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.bartending { background-image:url("https://images.unsplash.com/photo-1551024709-8f23befc6f87"); }
+.photography { background-image:url("https://images.unsplash.com/photo-1519681393784-d120267933ba"); }
+.safety { background-image:url("https://images.unsplash.com/photo-1550547660-d9450f859349"); }
+
+/* ABOUT */
+.about {
+  padding: 10vw 6vw 12vw;
+  background: #fff8fa;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6vw;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 560px;
+}
+
+.about h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.6rem,5vw,3.6rem);
+  color: #512d38;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a2c3a;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.15);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .hero {
+    grid-template-columns: 1fr;
+    text-align:center;
+  }
+  .hero-image {
+    margin-top:3rem;
+  }
+  .about-inner {
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
