@@ -111,7 +111,10 @@ body {
   color: inherit;
   outline: none;
 }
-
+.service-grid a {
+  border-radius: 28px;
+  overflow: hidden;
+}
 /* Individual tiles */
 .service-tile {
   position: relative;
