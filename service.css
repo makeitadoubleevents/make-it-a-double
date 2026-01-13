@@ -1,115 +1,86 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #512d38, #7a4b5e);
-  color: white;
-}
-
-.page-wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 6vw;
+  background: #fff;
+  color: #512d38;
 }
 
 /* HERO */
 .service-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4vw;
+  padding: 6vw;
+  gap: 6vw;
   align-items: center;
-  margin-bottom: 6vw;
+  background: linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
 }
 
-.service-hero h1 {
+.service-hero-text h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-size: clamp(3.5rem, 6vw, 5rem);
+  color: white;
   margin-bottom: 1rem;
 }
 
-.service-hero p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  opacity: 0.9;
+.service-hero-text p {
+  color: rgba(255,255,255,0.85);
   max-width: 500px;
+  line-height: 1.7;
 }
 
-.service-hero img {
+.service-hero-image img {
   width: 100%;
-  border-radius: 22px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.4);
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.4);
 }
 
 /* PACKAGES */
 .packages {
-  background: #f6d6e3;
-  padding: 6vw;
-  border-radius: 40px;
-  color: #512d38;
+  padding: 8vw 6vw;
+  background: #fff8fa;
 }
 
 .packages h2 {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  margin-bottom: 4vw;
+  margin-bottom: 4rem;
 }
 
 .package-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
-.package {
+.package-card {
   background: white;
-  padding: 2.5rem;
-  border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.12);
-  transition: .3s;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
-.package:hover {
-  transform: translateY(-10px);
-}
-
-.package h3 {
+.package-card h3 {
   font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  margin-bottom: .75rem;
+  font-size: 2rem;
+  margin-bottom: .5rem;
 }
 
-.package .price {
-  font-weight: 700;
+.price {
+  font-weight: 600;
   color: #b27092;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
 }
 
-.package ul {
+.package-card ul {
   padding-left: 1.2rem;
-  line-height: 1.8;
 }
 
-/* CTA */
-.book-btn {
-  display: inline-block;
-  margin-top: 2rem;
-  background: #512d38;
-  color: #f6d6e3;
-  padding: 14px 28px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
+.package-card li {
+  margin-bottom: .5rem;
 }
 
-.book-btn:hover {
-  background: #7a4b5e;
-}
-
-/* Mobile */
-@media(max-width: 900px){
-  .service-hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+.featured {
+  border: 2px solid #f4bfdb;
 }
