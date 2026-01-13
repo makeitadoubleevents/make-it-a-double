@@ -59,11 +59,19 @@ body {
   transform: translateY(-2px);
 }
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-image img {
   width: 100%;
-  max-width: 480px;
-  border-radius: 22px;
-  box-shadow: 0 60px 120px rgba(0,0,0,.45);
+  max-width: 560px;     /* makes it bigger */
+  height: auto;
+  object-fit: cover;
+  transform: translateY(10px); /* gently drops it down */
+  box-shadow: 0 60px 120px rgba(0,0,0,0.45);
 }
 
 /* SERVICES */
@@ -89,6 +97,9 @@ body {
 }
 
 .service-tile {
+  text-decoration: none;
+  color: inherit;
+  display: block;
   position: relative;
   height: 420px;
   border-radius: 28px;
