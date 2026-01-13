@@ -98,10 +98,10 @@ body {
 
 .service-grid a {
   display: block;
+   border-radius: 28px;
+  overflow: hidden;
   text-decoration: none;
   color: inherit;
-  border-radius: 28px;
-  overflow: hidden;
 }
 
 .service-grid a:link,
@@ -118,6 +118,7 @@ body {
 .service-tile {
   position: relative;
   height: 420px;
+  border-radius: 28px;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
