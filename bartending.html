@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mobile Bartending | Make It A Double</title>
-  <link rel="stylesheet" href="service.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Mobile Bartending | Make It A Double</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* Page specific fixes */
+.hero {
+  min-height: 70vh;
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero h1 {
+  white-space: normal; /* allow 2 lines */
+  max-width: 520px;
+}
+
+.hero-image img {
+  max-width: 420px;
+}
+</style>
+
 </head>
+
 <body>
 
-<div class="page-wrap">
+<section class="hero">
+  <div class="hero-content">
+    <h1>Mobile<br>Bartending</h1>
 
-  <div class="service-hero">
-    <div>
-      <h1>Mobile Bartending</h1>
-      <p>High-touch cocktail service with built-in safety. Every booking includes two staff members so you get premium hospitality without compromise.</p>
-    </div>
-    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87">
+    <p>
+      Elevated cocktail service for weddings, private parties, and unforgettable celebrations. 
+      Every booking includes safety-first staffing and polished hospitality.
+    </p>
+
+    <a href="index.html" class="btn">Back to Home</a>
   </div>
 
-  <div class="packages">
-    <h2>Packages</h2>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87" alt="Mobile bartending">
+  </div>
+</section>
 
-    <div class="package-grid">
+<section class="services" style="background:#fff8fa;">
+  <h2 class="script-heading">Bartending Packages</h2>
 
-      <div class="package">
+  <div class="service-grid">
+
+    <div class="service-tile bartending">
+      <div class="overlay">
         <h3>Essential Bar</h3>
-        <div class="price">$850</div>
-        <ul>
-          <li>Up to 50 guests</li>
-          <li>2 staff (bartender + security)</li>
-          <li>Beer, wine & basic cocktails</li>
-          <li>3 hours of service</li>
-        </ul>
+        <p>Up to 50 guests • Beer, wine & cocktails • 1 bartender + security</p>
       </div>
-
-      <div class="package">
-        <h3>Signature Experience</h3>
-        <div class="price">$1,250</div>
-        <ul>
-          <li>Up to 100 guests</li>
-          <li>2 professional bartenders</li>
-          <li>Custom cocktail menu</li>
-          <li>4 hours of service</li>
-        </ul>
-      </div>
-
-      <div class="package">
-        <h3>Luxury Open Bar</h3>
-        <div class="price">$1,850</div>
-        <ul>
-          <li>Up to 150 guests</li>
-          <li>2 bartenders + security</li>
-          <li>Premium spirits & mixers</li>
-          <li>5 hours of service</li>
-        </ul>
-      </div>
-
     </div>
 
-    <a href="index.html#book" class="book-btn">Book a consultation</a>
+    <div class="service-tile photography">
+      <div class="overlay">
+        <h3>Signature Bar</h3>
+        <p>Up to 100 guests • Custom cocktails • 2 bartenders</p>
+      </div>
+    </div>
+
+    <div class="service-tile safety">
+      <div class="overlay">
+        <h3>Luxury Bar</h3>
+        <p>Unlimited guests • Premium spirits • 2 bartenders + security</p>
+      </div>
+    </div>
 
   </div>
-
-</div>
+</section>
 
 </body>
 </html>
