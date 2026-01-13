@@ -111,26 +111,6 @@
     </div>
 
   </div>
-</section>
-
-<script>
-let index = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-
-function showTestimonial(i) {
-  testimonials.forEach(t => t.classList.remove("active"));
-  testimonials[i].classList.add("active");
-}
-
-function nextTestimonial() {
-  index = (index + 1) % testimonials.length;
-  showTestimonial(index);
-}
-
-function prevTestimonial() {
-  index = (index - 1 + testimonials.length) % testimonials.length;
-  showTestimonial(index);
-}
-</script>
+<
 </body>
 </html>
