@@ -99,7 +99,7 @@ body {
 .service-tile {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
   position: relative;
   height: 420px;
   border-radius: 28px;
