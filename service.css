@@ -12,18 +12,22 @@ body {
 }
 
 /* HERO */
-/* FORCE SINGLE LINE SERVICE HEADLINES */
 .service-hero {
-  width: 100%;
-  max-width: 100%;
+  padding: 8vw 6vw;
+  background: linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 .service-hero h1 {
-  display: block;
-  width: 100%;
-  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3.2rem, 6vw, 5rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
   white-space: nowrap;
-  overflow: visible;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .service-hero p {
