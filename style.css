@@ -98,6 +98,8 @@ body {
 
 /* Make the entire tile clickable without link styling */
 .service-grid a {
+    text-decoration: none;
+  color: inherit;
   display: block;
   height: 100%;
   text-decoration: none;
