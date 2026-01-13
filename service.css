@@ -13,11 +13,11 @@ body {
 
 /* HERO */
 .service-hero {
-  padding: 8vw 6vw;
-  background: linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
-  color: white;
-  text-align: center;
-  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4vw;
+  align-items: center;
+  margin-bottom: 6vw;
 }
 
 .service-hero h1 {
@@ -113,3 +113,4 @@ body {
     text-align: center;
   }
 }
+
