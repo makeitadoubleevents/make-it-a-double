@@ -1,78 +1,111 @@
-/* =========================================
-   PACKAGES
-========================================= */
+* {
+  box-sizing: border-box;
+}
 
-.packages {
-  padding: 7vw 6vw 6vw;
-  max-width: 1400px;
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #fff8fa;
+  color: #512d38;
+}
+
+/* ---------- HERO ---------- */
+
+.page-hero {
+  padding: 6vw 8vw;
+  background: linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
+  color: white;
+}
+
+.page-hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 4vw;
+  max-width: 1200px;
   margin: auto;
 }
 
-.packages h2 {
-  text-align: center;
+.page-text h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2.8rem, 5vw, 3.6rem);
-  margin-bottom: 4rem;
-  color: #512d38;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  margin-bottom: 1rem;
 }
 
-/* Grid */
-.package-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 3rem;
-}
-
-/* Card */
-.package {
-  background: white;
-  border-radius: 26px;
-  padding: 3.2rem 3rem;
-  box-shadow: 0 30px 70px rgba(0,0,0,.12);
-  transition: .4s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.package:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 45px 100px rgba(0,0,0,.18);
-}
-
-/* Headline */
-.package h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.4rem;
-  margin-bottom: .8rem;
-  color: #512d38;
-}
-
-/* Copy */
-.package p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #5a2d3b;
+.page-text p {
+  max-width: 520px;
+  line-height: 1.6;
+  opacity: .9;
   margin-bottom: 2rem;
 }
 
-/* Price */
-.price {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #b27092;
+.page-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 22px;
+  box-shadow: 0 40px 80px rgba(0,0,0,.4);
 }
-/* ================= FLIP CARDS ================= */
+
+/* ---------- BUTTONS ---------- */
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 40px;
+  border: 2px solid #f4bfdb;
+  color: #f4bfdb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: #f4bfdb;
+  color: #512d38;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #f4bfdb;
+  color: #512d38;
+  padding: 16px 38px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background: #ffe6f2;
+}
+
+/* ---------- PACKAGES ---------- */
+
+.packages {
+  padding: 8vw;
+  background: #fff8fa;
+  text-align: center;
+}
+
+.packages h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* GRID */
 
 .package-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 2.5rem;
-  margin-top: 3rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
+/* CARDS */
+
 .package {
-  background: #ffffff;
+  background: white;
   border-radius: 26px;
   padding: 3.5rem;
   border: 2px solid #f4bfdb;
@@ -81,27 +114,43 @@
 }
 
 .package:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 45px 90px rgba(0,0,0,.18);
+  transform: translateY(-10px);
+  box-shadow: 0 50px 100px rgba(0,0,0,.18);
 }
 
-/* Text */
 .package h3 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #512d38;
 }
 
 .package p {
-  font-size: 1.05rem;
   line-height: 1.7;
-  color: #4a2c3a;
   margin-bottom: 2rem;
+  color: #4a2c3a;
 }
 
 .price {
   font-size: 1.8rem;
   font-weight: 600;
   color: #b27092;
+}
+
+/* CTA */
+
+.cta-wrap {
+  margin-top: 5rem;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 900px) {
+  .page-hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .page-image img {
+    margin-top: 3rem;
+  }
 }
