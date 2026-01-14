@@ -67,10 +67,12 @@ body {
 
 .hero-image img {
   width: 100%;
-  max-width: 520px; /* adjust if you want it larger */
-  border-radius: 28px; /* rounded corners */
+  max-width: 520px;
+  height: auto;
+  border-radius: 28px;
+  overflow: hidden;
   object-fit: cover;
-  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 50px 120px rgba(0, 0, 0, 0.45);
 }
 /* SERVICES */
 .services {
