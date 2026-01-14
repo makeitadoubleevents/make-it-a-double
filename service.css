@@ -97,12 +97,13 @@ body {
 
 /* GRID */
 
-.packages {
+.service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 /* CARDS */
 
 .package {
