@@ -1,136 +1,157 @@
-/* GLOBAL */
+/* ================= SERVICE PAGE BASE ================= */
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
   background: #512d38;
-  color: #512d38;
 }
 
-/* HERO inherited from main site */
+/* ================= HERO ================= */
+
 .hero {
+  min-height: 70vh;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 5vw;
-  padding: 6vw;
   align-items: center;
-  background: linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
+  padding: 5vw;
+  gap: 4vw;
+  background: radial-gradient(circle at top right, #f4bfdb 0%, rgba(244,191,219,0.25) 35%, transparent 60%),
+              linear-gradient(135deg, #512d38, #b27092 60%, #87baab);
 }
 
 .hero-content {
   color: white;
+  max-width: 560px;
+  text-align: left;
 }
 
 .hero h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3.2rem, 6vw, 5rem);
-  line-height: 1;
-  margin-bottom: 1rem;
+  font-size: clamp(3rem, 5vw, 4.2rem);
+  font-weight: 500;
+  margin: 0 0 1rem;
+  line-height: 1.05;
 }
 
 .hero p {
-  max-width: 480px;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.6;
   color: rgba(255,255,255,0.85);
+  max-width: 480px;
+  margin-bottom: 2rem;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 1.5rem;
   background: #f4bfdb;
   color: #512d38;
   padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffe9f3;
+  transform: translateY(-2px);
+}
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 22px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+  object-fit: cover;
+}
+
+/* ================= PACKAGES ================= */
+
+.packages {
+  background: #fff8fa;
+  padding: 6vw;
+}
+
+.packages h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: #512d38;
+  margin-bottom: 4vw;
+}
+
+/* Grid */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2.5rem;
+}
+
+/* Card */
+.package {
+  background: white;
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.package:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+}
+
+.package h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #512d38;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: 600;
+  color: #b27092;
+  margin-bottom: 1rem;
+}
+
+.package ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+}
+
+.package li {
+  margin-bottom: 0.75rem;
+  color: #4a2c3a;
+}
+
+/* Button */
+.package a {
+  display: inline-block;
+  background: #f4bfdb;
+  color: #512d38;
+  padding: 12px 24px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
 }
 
-.btn:hover {
-  background: #ffe9f3;
-}
+/* ================= MOBILE ================= */
 
-/* IMAGE */
-.hero-image img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 22px;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.45);
-}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-/* ================= SERVICES GRID ================= */
-
-.services {
-  padding: 8vw 6vw;
-}
-
-.script-heading {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: #512d38;
-  margin-bottom: 4rem;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 2.5rem;
-}
-
-/* TILE BASE */
-.service-tile {
-  position: relative;
-  height: 420px;
-  border-radius: 28px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.18);
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.service-tile:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 40px 80px rgba(0,0,0,0.25);
-}
-
-/* IMAGES */
-.bartending {
-  background-image: url("https://images.unsplash.com/photo-1551024709-8f23befc6f87");
-  background-size: cover;
-  background-position: center;
-}
-
-.photography {
-  background-image: url("https://images.unsplash.com/photo-1521017432531-fbd92d768814");
-  background-size: cover;
-  background-position: center;
-}
-
-.safety {
-  background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
-  background-size: cover;
-  background-position: center;
-}
-
-/* OVERLAY */
-.overlay {
-  width: 100%;
-  padding: 2.5rem;
-  background: linear-gradient(to top,
-    rgba(0,0,0,0.85),
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0)
-  );
-  color: white;
-}
-
-.overlay h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  margin-bottom: .5rem;
-}
-
-.overlay p {
-  line-height: 1.6;
-  opacity: .9;
+  .hero-image img {
+    max-width: 90%;
+  }
 }
