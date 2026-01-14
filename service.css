@@ -94,12 +94,10 @@ body {
 
 /* GRID */
 
-.package-grid {
+.packages {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  max-width: 1200px;
-  margin: auto;
 }
 
 /* CARDS */
@@ -153,4 +151,15 @@ body {
   .page-image img {
     margin-top: 3rem;
   }
+}
+/* Force solid CTA buttons on service pages */
+.btn {
+  background: #f4bfdb;
+  color: #512d38;
+  opacity: 1;
+  border: none;
+}
+
+.btn:hover {
+  background: #ffe9f3;
 }
