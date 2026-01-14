@@ -1,57 +1,55 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #512d38, #7a4b5e);
-  color: white;
-}
-
-.page-wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 6vw;
+  background: #fff8fa;
 }
 
 /* HERO */
 .service-hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: 4vw;
+  padding: 6vw;
   align-items: center;
-  margin-bottom: 6vw;
+  background: linear-gradient(135deg, #512d38, #b27092);
 }
 
-.service-hero h1 {
+.service-hero-text {
+  color: white;
+  max-width: 520px;
+}
+
+.service-hero-text h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-size: clamp(3rem, 5vw, 4rem);
   margin-bottom: 1rem;
 }
 
-.service-hero p {
+.service-hero-text p {
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.6;
   opacity: 0.9;
-  max-width: 500px;
 }
 
-.service-hero img {
+.service-hero-image img {
   width: 100%;
-  border-radius: 22px;
-  box-shadow: 0 30px 80px rgba(0,0,0,.4);
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
 }
 
 /* PACKAGES */
 .packages {
-  background: #f6d6e3;
   padding: 6vw;
-  border-radius: 40px;
-  color: #512d38;
+  background: #fff8fa;
 }
 
 .packages h2 {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  margin-bottom: 4vw;
+  color: #512d38;
+  margin-bottom: 4rem;
 }
 
 .package-grid {
@@ -64,52 +62,51 @@ body {
   background: white;
   padding: 2.5rem;
   border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0,0,0,.12);
-  transition: .3s;
-}
-
-.package:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .package h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
-  margin-bottom: .75rem;
+  color: #512d38;
 }
 
-.package .price {
-  font-weight: 700;
+.price {
+  font-weight: 600;
   color: #b27092;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .package ul {
-  padding-left: 1.2rem;
-  line-height: 1.8;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
-/* CTA */
-.book-btn {
+.package li {
+  margin-bottom: 0.75rem;
+  color: #4a2c3a;
+}
+
+.package a {
   display: inline-block;
-  margin-top: 2rem;
-  background: #512d38;
-  color: #f6d6e3;
-  padding: 14px 28px;
+  background: #f4bfdb;
+  color: #512d38;
+  padding: 12px 24px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
 }
 
-.book-btn:hover {
-  background: #7a4b5e;
-}
-
-/* Mobile */
-@media(max-width: 900px){
+/* MOBILE */
+@media (max-width: 900px) {
   .service-hero {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .service-hero-image img {
+    margin-top: 2rem;
+    max-width: 90%;
   }
 }
