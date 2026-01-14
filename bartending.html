@@ -37,6 +37,7 @@ body {
   opacity: 0.9;
 }
 
+/* HERO IMAGE */
 .service-hero-image img {
   width: 100%;
   max-width: 460px;
@@ -44,10 +45,9 @@ body {
   box-shadow: 0 30px 60px rgba(0,0,0,.4);
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn {
   display: inline-block;
-  margin-top: 1.5rem;
   background: #f4bfdb;
   color: #512d38;
   padding: 14px 28px;
@@ -56,9 +56,14 @@ body {
   font-weight: 600;
   transition: .3s;
 }
+
 .btn:hover {
   background: #ffe9f3;
   transform: translateY(-2px);
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
 }
 
 /* PACKAGES */
@@ -108,7 +113,7 @@ body {
 /* CTA */
 .book-cta {
   text-align: center;
-  padding: 5vw;
+  padding: 4vw 0 6vw;
 }
 
 /* MOBILE */
@@ -136,7 +141,10 @@ body {
       Elevated cocktail service for weddings, private events, and unforgettable celebrations.
       Every booking includes safety-first staffing and polished hospitality.
     </p>
-    <a href="index.html" class="btn">← Back to Home</a>
+
+    <div class="hero-buttons">
+      <a href="index.html" class="btn">← Back to Home</a>
+    </div>
   </div>
 
   <div class="service-hero-image">
@@ -152,10 +160,7 @@ body {
 
     <div class="package">
       <h3>Essential Bar</h3>
-      <p>
-        Ideal for intimate events and private gatherings.
-        Includes beer, wine, and classic cocktails.
-      </p>
+      <p>Perfect for smaller events and private parties.</p>
       <p>Up to 50 guests</p>
       <p>1 bartender + professional security required</p>
       <div class="price">$75/hr</div>
@@ -163,9 +168,7 @@ body {
 
     <div class="package">
       <h3>Signature Bar</h3>
-      <p>
-        Our most popular option with custom cocktails and elevated service.
-      </p>
+      <p>Our most popular option with custom cocktails.</p>
       <p>Up to 100 guests</p>
       <p>2 bartenders included</p>
       <div class="price">$120/hr</div>
@@ -173,9 +176,7 @@ body {
 
     <div class="package">
       <h3>Luxury Bar</h3>
-      <p>
-        Premium spirits, specialty cocktails, and seamless execution for upscale events.
-      </p>
+      <p>Premium spirits and full service for upscale events.</p>
       <p>Unlimited guests</p>
       <p>2 bartenders + professional security</p>
       <div class="price">$175/hr</div>
@@ -184,9 +185,9 @@ body {
   </div>
 </section>
 
-<!-- BOOK CTA -->
+<!-- CONSULT CTA -->
 <section class="book-cta">
-  <a href="index.html#book" class="btn">Book a Consultation</a>
+  <a href="index.html#book" class="btn">Schedule a Consultation</a>
 </section>
 
 </body>
