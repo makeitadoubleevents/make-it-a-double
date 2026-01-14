@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book a Consultation | Make It A Double</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* Page-specific styles */
+
+.book-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #512d38, #b27092);
+  padding: 6vw 4vw 8vw;
+  display: flex;
+  justify-content: center;
+}
+
+.book-inner {
+  width: 100%;
+  max-width: 860px;
+  background: #fff;
+  border-radius: 28px;
+  padding: 4rem 3rem;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+}
+
+.book-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.book-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: #512d38;
+  margin-bottom: 0.75rem;
+}
+
+.book-header p {
+  font-size: 1.1rem;
+  color: #4a2c3a;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #b27092;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* FORM WRAPPER */
+.form-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Google Form responsive fix */
+.form-wrap iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 2076px;
+  border: none;
+}
+
+/* Mobile spacing */
+@media (max-width: 700px) {
+  .book-inner {
+    padding: 3rem 1.5rem;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="book-page">
+  <div class="book-inner">
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="book-header">
+      <h1>Book a Consultation</h1>
+      <p>
+        Tell us about your event and we’ll follow up with availability,
+        packages, and next steps.
+      </p>
+    </div>
+
+    <div class="form-wrap">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeA21cNwtUZeJevhk9f8q0M2FPF9riyprNMbOfgUCtYg8066Q/viewform?embedded=true"
+        loading="lazy">
+        Loading…
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
