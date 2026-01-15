@@ -212,3 +212,38 @@ body {
   background: #ffe9f3;
 }
 url(Images/Jadewithcamera.jpg)
+/* MOBILE ABOUT SECTION FIX */
+@media (max-width: 900px) {
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    order: 1;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-image {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-image img {
+    max-width: 85%;
+    border-radius: 18px;
+  }
+}
