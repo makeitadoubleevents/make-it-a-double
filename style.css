@@ -125,7 +125,7 @@ body {
 
 /* Images */
 .bartending {
-  background-image: url("https://images.unsplash.com/photo-1551024709-8f23befc6f87");
+  background-image: url("Images/2175573216336587204.JPG");
 }
 
 .photography {
@@ -160,7 +160,7 @@ body {
   line-height: 1.6;
   opacity: .9;
 }
-.bartending { background-image:url("https://images.unsplash.com/photo-1551024709-8f23befc6f87"); }
+.bartending { background-image:url("Images/2175573216336587204.JPG"); }
 .photography { background-image:url("Jadewithcamera.jpg"); }
 .safety { background-image:url("https://images.unsplash.com/photo-1550547660-d9450f859349"); }
 
