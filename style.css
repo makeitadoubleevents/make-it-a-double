@@ -129,7 +129,7 @@ body {
 }
 
 .photography {
-  background-image: url("Jadewithcamera.jpg");
+  background-image: url("Images/Jadewithcamera.jpg");
 }
 
 .safety {
@@ -161,7 +161,7 @@ body {
   opacity: .9;
 }
 .bartending { background-image:url("Images/2175573216336587204.JPG"); }
-.photography { background-image:url("Jadewithcamera.jpg"); }
+.photography { background-image:url("Images/Jadewithcamera.jpg"); }
 .safety { background-image:url("https://images.unsplash.com/photo-1550547660-d9450f859349"); }
 
 /* ABOUT */
