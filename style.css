@@ -244,4 +244,35 @@ body {
     border-radius: 18px;
   }
 }
+/* MOBILE HERO FIX */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    white-space: normal; /* allow wrap on mobile */
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 22px;
+    display: block;
+  }
+}
 
