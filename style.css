@@ -212,38 +212,35 @@ body {
   background: #ffe9f3;
 }
 
-/* MOBILE FIX — ABOUT SECTION */
+/* FORCE ABOUT STACK ON MOBILE (OVERRIDE) */
 @media (max-width: 768px) {
   .about-inner {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
   }
 
   .about-text {
     order: 1;
-    text-align: left;
-  }
-
-  .about-text h2 {
-    font-size: 2.4rem;
-  }
-
-  .about-text p {
-    font-size: 1.05rem;
-    line-height: 1.7;
+    text-align: center;
+    max-width: 90%;
   }
 
   .about-image {
     order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 
   .about-image img {
     width: 100%;
-    max-width: 100%;
-    border-radius: 18px;
+    max-width: 90%;
+    height: auto;
   }
 }
+
 /* MOBILE HERO FIX */
 @media (max-width: 768px) {
   .hero {
