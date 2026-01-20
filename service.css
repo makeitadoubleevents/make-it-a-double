@@ -167,3 +167,280 @@ body {
 .btn:hover {
   background: #ffe9f3;
 }
+/* =====================================
+   BARTENDING PAGE — PACKAGES & ADD-ONS
+   Scoped to .bartending-page ONLY
+   ===================================== */
+
+.bartending-page .packages {
+  padding: 8vw 6vw;
+  background: #fff8fa;
+}
+
+.bartending-page .packages h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  text-align: center;
+  color: #512d38;
+  margin-bottom: 4rem;
+}
+
+/* GRID */
+.bartending-page .package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.bartending-page .package {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2.8rem 2.6rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.bartending-page .package:hover {
+  border-color: #f4bfdb;
+  transform: translateY(-6px);
+}
+
+/* TITLE */
+.bartending-page .package h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+  color: #512d38;
+  margin-bottom: 1.2rem;
+}
+
+/* MOST POPULAR BADGE */
+.bartending-page .package.popular::after {
+  content: "★ Most Popular";
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  background: #f4bfdb;
+  color: #512d38;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* LIST */
+.bartending-page .package ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.8rem 0 2.4rem;
+}
+
+.bartending-page .package li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+  color: #4a2c3a;
+  line-height: 1.5;
+}
+
+/* PINK ARROW BULLETS */
+.bartending-page .package li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f4bfdb;
+  font-size: 0.9rem;
+}
+
+/* PRICE */
+.bartending-page .price {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #512d38;
+  margin-top: 1rem;
+}
+
+/* ================================
+   ADD-ONS SECTION
+   ================================ */
+
+.bartending-page .addons {
+  margin-top: 6rem;
+}
+
+.bartending-page .addons h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  color: #512d38;
+  margin-bottom: 3rem;
+}
+
+.bartending-page .addons .package {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ================================
+   MOBILE REFINEMENTS
+   ================================ */
+
+@media (max-width: 768px) {
+  .bartending-page .package {
+    padding: 2.4rem 2rem;
+  }
+
+  .bartending-page .package h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* =====================================
+   BARTENDING PAGE — PACKAGES & ADD-ONS
+   Scoped to .bartending-page ONLY
+   ===================================== */
+
+.bartending-page .packages {
+  padding: 8vw 6vw;
+  background: #fff8fa;
+}
+
+.bartending-page .packages h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  text-align: center;
+  color: #512d38;
+  margin-bottom: 4rem;
+}
+
+/* GRID */
+.bartending-page .package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.bartending-page .package {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2.8rem 2.6rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.bartending-page .package:hover {
+  border-color: #f4bfdb;
+  transform: translateY(-6px);
+}
+
+/* TITLE */
+.bartending-page .package h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+  color: #512d38;
+  margin-bottom: 1.2rem;
+}
+
+/* MOST POPULAR BADGE */
+.bartending-page .package.popular::after {
+  content: "★ Most Popular";
+  position: absolute;
+  top: -14px;
+  right: 24px;
+  background: #f4bfdb;
+  color: #512d38;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* LIST */
+.bartending-page .package ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.8rem 0 2.4rem;
+}
+
+.bartending-page .package li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+  color: #4a2c3a;
+  line-height: 1.5;
+}
+
+/* PINK ARROW BULLETS */
+.bartending-page .package li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f4bfdb;
+  font-size: 0.9rem;
+}
+
+/* PRICE */
+.bartending-page .price {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #512d38;
+  margin-top: 1rem;
+}
+
+/* ================================
+   ADD-ONS SECTION
+   ================================ */
+
+.bartending-page .addons {
+  margin-top: 6rem;
+}
+
+.bartending-page .addons h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  color: #512d38;
+  margin-bottom: 3rem;
+}
+
+.bartending-page .addons .package {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ================================
+   MOBILE REFINEMENTS
+   ================================ */
+
+@media (max-width: 768px) {
+  .bartending-page .package {
+    padding: 2.4rem 2rem;
+  }
+
+  .bartending-page .package h3 {
+    font-size: 1.7rem;
+  }
+}
+/* ===========================
+   CTA FIX – CENTER BUTTON
+=========================== */
+
+.cta-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
