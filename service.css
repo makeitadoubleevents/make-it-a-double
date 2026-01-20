@@ -444,16 +444,18 @@ body {
   margin-top: 4rem;
 }
 /* ================================
-   BARTENDING PAGE — MOBILE STACK
+   FORCE MOBILE STACK — BARTENDING
    ================================ */
 @media (max-width: 900px) {
-  .bartending-page .package-grid {
-    display: flex !important;
-    flex-direction: column;
-    gap: 2rem;
+
+  body.bartending-page .package-grid {
+    display: block !important;
+    grid-template-columns: none !important;
   }
 
-  .bartending-page .package {
+  body.bartending-page .package {
     width: 100%;
+    margin-bottom: 2rem;
   }
+
 }
