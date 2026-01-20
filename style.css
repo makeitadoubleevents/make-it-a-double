@@ -283,3 +283,95 @@ body {
     padding-bottom: 8rem;
   }
 }
+/* ===========================
+   TESTIMONIALS SECTION
+=========================== */
+
+.testimonials {
+  padding: 8vw 6vw;
+  background: #fff8fa;
+  overflow: hidden;
+}
+
+.testimonials h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  text-align: center;
+  color: #512d38;
+  margin-bottom: 4rem;
+}
+
+/* TRACK */
+.testimonial-track {
+  display: flex;
+  gap: 2.5rem;
+  animation: scrollTestimonials 40s linear infinite;
+  width: max-content;
+}
+
+/* CARD */
+.testimonial {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2.4rem 2.2rem;
+  width: 320px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  border: 2px solid rgba(244,191,219,0.9);
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* NAME + STARS */
+.testimonial strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #512d38;
+}
+
+.stars {
+  font-size: 0.85rem;
+  color: #f4bfdb;
+  letter-spacing: 2px;
+}
+
+/* TEXT */
+.testimonial p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4a2c3a;
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollTestimonials {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .testimonial-track {
+    animation-duration: 60s;
+  }
+
+  .testimonial {
+    width: 280px;
+  }
+}
