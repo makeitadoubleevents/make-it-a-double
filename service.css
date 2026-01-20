@@ -201,7 +201,7 @@ body {
   padding: 3rem;
   box-shadow: 0 25px 50px rgba(0,0,0,0.12);
   position: relative;
-  border: 2px solid transparent;
+  border: 2px solid #f4bfdb; /* ALWAYS visible */
   transition: all 0.3s ease;
 }
 
