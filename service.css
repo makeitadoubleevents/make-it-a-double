@@ -443,12 +443,17 @@ body {
   justify-content: center;
   margin-top: 4rem;
 }
-/* MOBILE FIX — STACK PACKAGES */
+/* ================================
+   BARTENDING PAGE — MOBILE STACK
+   ================================ */
 @media (max-width: 900px) {
-  .package-grid {
+  .bartending-page .package-grid {
     display: flex !important;
     flex-direction: column;
     gap: 2rem;
   }
-}
 
+  .bartending-page .package {
+    width: 100%;
+  }
+}
