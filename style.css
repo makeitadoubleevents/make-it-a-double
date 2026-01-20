@@ -272,3 +272,14 @@ body {
     display: block;
   }
 }
+.cta-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+}
+@media (max-width: 768px) {
+  .cta-wrap {
+    padding-bottom: 8rem;
+  }
+}
