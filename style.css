@@ -539,3 +539,13 @@ body {
     font-size: 1.7rem;
   }
 }
+/* ===========================
+   CTA FIX – CENTER BUTTON
+=========================== */
+
+.cta-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
