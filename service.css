@@ -445,16 +445,10 @@ body {
 }
 /* MOBILE FIX — STACK PACKAGES */
 @media (max-width: 900px) {
-
   .package-grid {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     gap: 2rem;
   }
-
-  .package {
-    width: 100%;
-  }
-
 }
 
