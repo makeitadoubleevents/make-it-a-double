@@ -443,4 +443,18 @@ body {
   justify-content: center;
   margin-top: 4rem;
 }
+/* MOBILE FIX — STACK PACKAGES */
+@media (max-width: 900px) {
+
+  .package-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .package {
+    width: 100%;
+  }
+
+}
 
